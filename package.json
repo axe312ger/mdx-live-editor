@@ -1,0 +1,28 @@
+{
+  "name": "mdx-live-editor",
+  "version": "0.0.1",
+  "dependencies": {
+    "@mdx-js/runtime": "^0.20.3",
+    "keyboardjs": "^2.5.1",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-scripts": "2.1.8",
+    "simplemde": "^1.11.2",
+    "styled-components": "^4.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
