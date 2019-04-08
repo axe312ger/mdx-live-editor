@@ -4,12 +4,12 @@
   "homepage": "https://axe312ger.github.io/mdx-live-editor/",
   "dependencies": {
     "@mdx-js/runtime": "^0.20.3",
+    "easymde": "^2.5.1",
     "gh-pages": "^2.0.1",
     "keyboardjs": "^2.5.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-scripts": "2.1.8",
-    "simplemde": "^1.11.2",
     "styled-components": "^4.2.0"
   },
   "scripts": {

@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import './App.css'
 
-import SimpleMDE from 'simplemde'
-import 'simplemde/dist/simplemde.min.css'
+import EasyMDE from 'easymde'
+import 'easymde/dist/easymde.min.css'
 import MDX from '@mdx-js/runtime'
 import { renderToStaticMarkup } from 'react-dom/server'
 
@@ -10,7 +10,7 @@ import Grid from './mdx/Grid'
 
 export default class App extends Component {
   componentDidMount() {
-    this.simplemde = new SimpleMDE({
+    this.easymde = new EasyMDE({
       autoDownloadFontAwesome: true,
       forceSync: true,
       autofocus: true,
@@ -71,7 +71,7 @@ export default class App extends Component {
       <div id="app">
         <textarea id="editor">{`# MDX Live Editor
 
-* Based on [SimpleMDE](https://github.com/sparksuite/simplemde-markdown-editor) and [MDX Runtime](https://mdxjs.com/advanced/runtime/)
+* Based on [EasyMDE](https://github.com/Ionaru/easy-markdown-editor) and [MDX Runtime](https://mdxjs.com/advanced/runtime/)
 
 ## Example Component
 
