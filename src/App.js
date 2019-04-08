@@ -64,12 +64,15 @@ export default class App extends Component {
         'fullscreen'
       ]
     })
+    this.easymde.toggleSideBySide()
   }
 
   render() {
     return (
       <div id="app">
-        <textarea id="editor">{`# MDX Live Editor
+        <textarea
+          id="editor"
+          defaultValue={`# MDX Live Editor
 
 * Based on [EasyMDE](https://github.com/Ionaru/easy-markdown-editor) and [MDX Runtime](https://mdxjs.com/advanced/runtime/)
 
@@ -164,7 +167,8 @@ Dum more saecula ab rotarum isdem ille relinquunt admovit prolem. Quae pectora
 reperta, aut fugis gratia tabellas paterno, illa excidit? Sanguinis *in* pavida
 si cupit respicit aris membra pedibusque cruorem veluti sub certe quam parentis,
 vulnere spatiantes oculi adstitit.
-`}</textarea>
+`}
+        />
       </div>
     )
   }
