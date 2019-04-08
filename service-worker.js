@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/mdx-live-editor/precache-manifest.f994c74183b28c1643aeac0b4f7d9cf6.js"
+  "/mdx-live-editor/precache-manifest.a3d80047f27764f21759bbf7b160e860.js"
 );
 
 workbox.clientsClaim();
