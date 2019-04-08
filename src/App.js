@@ -42,8 +42,7 @@ export default class App extends Component {
             )
           }
         })
-        // @todo return last value to avoid flickering
-        return null
+        return preview.innerHTML
       },
       toolbar: [
         'heading-1',
