@@ -3,8 +3,8 @@
   "version": "0.0.1",
   "homepage": "https://axe312ger.github.io/mdx-live-editor/",
   "dependencies": {
+    "@axe312/easymde": "^2.7.1",
     "@mdx-js/runtime": "^0.20.3",
-    "easymde": "^2.5.1",
     "gh-pages": "^2.0.1",
     "keyboardjs": "^2.5.1",
     "raw.macro": "^0.3.0",

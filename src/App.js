@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 
-import EasyMDE from 'easymde'
-import 'easymde/dist/easymde.min.css'
+import EasyMDE from '@axe312/easymde'
+import '@axe312/easymde/dist/easymde.min.css'
 import { renderToStaticMarkup } from 'react-dom/server'
 import raw from 'raw.macro'
 
@@ -21,7 +21,6 @@ export default function App() {
       indentWithTabs: false,
       spellChecker: false,
       previewRender: plainText => {
-        console.log({ plainText })
         try {
           return renderToStaticMarkup(<Renderer>{plainText}</Renderer>)
         } catch (err) {
