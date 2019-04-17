@@ -8,10 +8,10 @@ const ActualGrid = styled.div`
   flex-wrap: wrap;
 
   & > * {
+    flex: 1 0 200px;
     padding: 1rem;
     margin-bottom: 0;
     padding-bottom: 0;
-    max-width: 200px;
   }
 
   & img {
