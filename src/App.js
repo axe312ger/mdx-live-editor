@@ -81,11 +81,11 @@ Displays any content next to each other. Works best with 🐈
 
 <Grid>
 
-  ![](http://lorempixel.com/200/300/cats/1)
+  ![](https://source.unsplash.com/weekly?water)
 
-  ![](http://lorempixel.com/200/300/cats/2)
+  ![](https://source.unsplash.com/weekly?nature)
 
-  ![](http://lorempixel.com/200/300/cats/3)
+  ![](https://source.unsplash.com/weekly?air)
 
 </Grid>
 

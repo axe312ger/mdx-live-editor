@@ -11,6 +11,11 @@ const ActualGrid = styled.div`
     padding: 1rem;
     margin-bottom: 0;
     padding-bottom: 0;
+    max-width: 200px;
+  }
+
+  & img {
+    width: 100%;
   }
 `
 
