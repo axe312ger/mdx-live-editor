@@ -1,12 +1,35 @@
 import React, { useEffect } from 'react'
 
-import EasyMDE from '@axe312/easymde'
 import '@axe312/easymde/dist/easymde.min.css'
-import { renderToStaticMarkup } from 'react-dom/server'
 import raw from 'raw.macro'
 
-import Renderer from './Renderer'
+import editor from './editor/Editor'
 import './App.css'
+
+import Grid from './mdx/Grid'
+
+const components = [
+  {
+    tagname: 'Grid',
+    component: Grid,
+    title: 'Grid',
+    description: 'Display content next to each other',
+    icon: 'columns',
+    demo: `<Grid>
+  <img src="https://source.unsplash.com/weekly?water" alt="" />
+  <img src="https://source.unsplash.com/weekly?nature" alt="" />
+  <img src="https://source.unsplash.com/weekly?air" alt="" />
+</Grid>`
+  }
+]
+
+const replacements = {
+  h1: ({ children, ...props }) => (
+    <h1 style={{ color: 'tomato' }} {...props}>
+      {children}
+    </h1>
+  )
+}
 
 export default function App() {
   let easymde
@@ -14,45 +37,7 @@ export default function App() {
   const defaultMarkdownValue = raw('./default.md')
 
   useEffect(() => {
-    easymde = new EasyMDE({
-      autoDownloadFontAwesome: true,
-      forceSync: true,
-      autofocus: true,
-      indentWithTabs: false,
-      spellChecker: false,
-      previewRender: plainText => {
-        try {
-          return renderToStaticMarkup(<Renderer>{plainText}</Renderer>)
-        } catch (err) {
-          console.error(err)
-          return renderToStaticMarkup(
-            <>
-              <h1>{err.name}</h1>
-              <p>{err.message}</p>
-            </>
-          )
-        }
-      },
-      toolbar: [
-        'heading-1',
-        'heading-2',
-        'heading-3',
-        '|',
-        'bold',
-        'italic',
-        'link',
-        'image',
-        '|',
-        'quote',
-        'unordered-list',
-        'ordered-list',
-        '|',
-        'preview',
-        'side-by-side',
-        'fullscreen'
-      ]
-    })
-    easymde.toggleSideBySide()
+    easymde = editor({ components, replacements })
   }, [easymde])
 
   return (
