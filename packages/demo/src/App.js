@@ -3,7 +3,7 @@ import React, { useEffect } from 'react'
 import '@axe312/easymde/dist/easymde.min.css'
 import raw from 'raw.macro'
 
-import editor from './editor/Editor'
+import editor from '@mdx-live/editor'
 import './App.css'
 
 import Grid from './mdx/Grid'
