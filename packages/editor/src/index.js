@@ -19,18 +19,21 @@ const Wrapper = styled.div`
   max-width: 100%;
   max-height: 100%;
   overflow: hidden;
-
-  & .CodeMirror {
-    height: 100%;
-    padding: 1rem;
-    font-family: 'Fira Mono', monospace;
-  }
 `
 
 const Editor = styled.div`
   grid-column: 1;
-  overflow-y: scroll;
   border-right: 1px solid grey;
+  position: relative;
+
+  & .CodeMirror {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    font-family: 'Fira Mono', monospace;
+  }
 `
 
 const Preview = styled.div`
