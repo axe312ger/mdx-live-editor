@@ -4,7 +4,7 @@
 
 * Based on [EasyMDE](https://github.com/Ionaru/easy-markdown-editor) and [MDX Runtime](https://mdxjs.com/advanced/runtime/)
 
-[![](https://raw.githubusercontent.com/axe312ger/mdx-live-editor/master/packages/demo/demo.jpg)](https://axe312ger.github.io/mdx-live-editor/)
+[![](https://raw.githubusercontent.com/axe312ger/mdx-live-editor/master/demo.jpg)](https://axe312ger.github.io/mdx-live-editor/)
 
 ## Goals
 

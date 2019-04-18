@@ -1,6 +1,6 @@
 # MDX Live Editor Preview
 
-[![](https://raw.githubusercontent.com/axe312ger/mdx-live-editor/master/packages/demo/demo.jpg)](https://axe312ger.github.io/mdx-live-editor/)
+[![](https://raw.githubusercontent.com/axe312ger/mdx-live-editor/master/demo.jpg)](https://axe312ger.github.io/mdx-live-editor/)
 
 ## Available Scripts
 
