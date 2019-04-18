@@ -1,5 +1,6 @@
 {
   "name": "@mdx-live/demo",
+  "description": "See here https://axe312ger.github.io/mdx-live-editor/",
   "version": "0.0.5",
   "homepage": "https://axe312ger.github.io/mdx-live-editor/",
   "dependencies": {
@@ -29,5 +30,5 @@
     "not ie <= 11",
     "not op_mini all"
   ],
-  "gitHead": "5e4048e47277c2981612b61bc7f2c6b51b0eedb1"
+  "gitHead": "d33cf9119e9ca9493c309cc7f4fbd898e80b1c96"
 }
