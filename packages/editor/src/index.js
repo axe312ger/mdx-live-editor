@@ -30,10 +30,10 @@ export default function editor({ components = [], replacements = {}, toolbar = n
       } catch (err) {
         console.error(err)
         return renderToStaticMarkup(
-          <>
+          <div>
             <h1>{err.name}</h1>
             <p>{err.message}</p>
-          </>
+          </div>
         )
       }
     },
