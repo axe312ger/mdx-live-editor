@@ -6,7 +6,12 @@ import MDX from '@mdx-js/runtime'
 
 import Toolbar from './Toolbar'
 
-export default function editor({ components = [], replacements = {}, toolbar = null, easymde: easymdeConfig = {} }) {
+export default function editor({
+  components = [],
+  replacements = {},
+  toolbar = null,
+  easymde: easymdeConfig = {}
+}) {
   const scope = components.reduce(
     (scope, { tagname, component }) => ({
       ...scope,
@@ -18,10 +23,10 @@ export default function editor({ components = [], replacements = {}, toolbar = n
   const config = {
     ...{
       autoDownloadFontAwesome: true,
-    forceSync: true,
-    autofocus: true,
-    indentWithTabs: false,
-    spellChecker: false,
+      forceSync: true,
+      autofocus: true,
+      indentWithTabs: false,
+      spellChecker: false
     },
     ...easymdeConfig
   }

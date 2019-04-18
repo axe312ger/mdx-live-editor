@@ -28,14 +28,14 @@ export default function toolbar({ toolbar = null, components = [] }) {
       if (!helpWindow) {
         return
       }
-        helpWindow.innerHTML = components
-          .map(
-            ({ title, description, demo }) =>
-              `<h1>${title}</h1><p>${description}</p><pre><code>${encode(
-                demo
-              )}</code></pre>`
-          )
-          .join('<hr/>')
+      helpWindow.innerHTML = components
+        .map(
+          ({ title, description, demo }) =>
+            `<h1>${title}</h1><p>${description}</p><pre><code>${encode(
+              demo
+            )}</code></pre>`
+        )
+        .join('<hr/>')
     },
     className: `fa fa-question-circle`,
     title: 'Help'
