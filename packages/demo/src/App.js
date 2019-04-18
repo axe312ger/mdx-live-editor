@@ -1,8 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 
-import mdxLiveEditor from '@mdx-live/editor'
+import MdxLiveEditor from '@mdx-live/editor'
 import styled from 'styled-components'
-import '@axe312/easymde/dist/easymde.min.css'
 
 import Grid from './mdx/Grid'
 import defaultMarkdownValue from './default.md'
@@ -35,23 +34,12 @@ const replacements = {
   )
 }
 
-export default function App() {
-  const editorRef = useRef(null)
-  const [editor, setEditor] = useState(null)
-
-  useEffect(() => {
-    if (!editor) {
-      setEditor(
-        mdxLiveEditor({
-          components,
-          replacements,
-          easymde: { element: editorRef.current }
-        })
-      )
-    }
-  })
-
+export default function App () {
   return (
-    <Textarea ref={editorRef} id="editor" defaultValue={defaultMarkdownValue} />
+    <MdxLiveEditor
+      components={components}
+      replacements={replacements}
+      defaultValue={defaultMarkdownValue}
+    />
   )
 }

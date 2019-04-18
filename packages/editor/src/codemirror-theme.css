@@ -1,0 +1,56 @@
+/* Based on https://github.com/Ionaru/easy-markdown-editor */
+
+.cm-s-mdx-live .cm-tag {
+    color: #63a35c;
+}
+
+.cm-s-mdx-live .cm-attribute {
+    color: #795da3;
+}
+
+.cm-s-mdx-live .cm-string {
+    color: #183691;
+}
+
+.cm-s-mdx-live .cm-header-1 {
+    font-size: 200%;
+    line-height: 200%;
+}
+
+.cm-s-mdx-live .cm-header-2 {
+    font-size: 175%;
+    line-height: 175%;
+}
+
+.cm-s-mdx-live .cm-header-3 {
+    font-size: 150%;
+    line-height: 150%;
+}
+
+.cm-s-mdx-live .cm-header-4 {
+    font-size: 125%;
+    line-height: 125%;
+}
+
+.cm-s-mdx-live .cm-header-5 {
+    font-size: 115%;
+    line-height: 115%;
+}
+
+.cm-s-mdx-live .cm-comment {
+    background: rgba(0, 0, 0, .05);
+    border-radius: 2px;
+}
+
+.cm-s-mdx-live .cm-link {
+    color: #7f8c8d;
+}
+
+.cm-s-mdx-live .cm-url {
+    color: #aab2b3;
+}
+
+.cm-s-mdx-live .cm-quote {
+    color: #7f8c8d;
+    font-style: italic;
+}
