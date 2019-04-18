@@ -8,7 +8,7 @@ const ActualGrid = styled.div`
   flex-wrap: wrap;
 
   & > * {
-    flex: 1 0 200px;
+    flex: 1 0 100px;
     padding: 1rem;
     margin-bottom: 0;
     padding-bottom: 0;
@@ -23,7 +23,7 @@ export default class Grid extends React.PureComponent {
   static propTypes = {
     children: propTypes.node.isRequired
   }
-  render() {
+  render () {
     const { children } = this.props
     return <ActualGrid>{children}</ActualGrid>
   }

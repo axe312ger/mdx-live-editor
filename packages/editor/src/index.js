@@ -1,5 +1,5 @@
 /* eslint-disable  */
-import React, { useState } from 'react'
+import React, { useState, useRef } from 'react'
 import styled from 'styled-components'
 import MDX from '@mdx-js/runtime'
 import { Controlled as CodeMirror } from 'react-codemirror2'
@@ -93,6 +93,7 @@ export default function MdxLiveEditor({
   defaultValue
 }) {
   const [value, setValue] = useState(defaultValue || null)
+  const previewRef = useRef(null)
 
   const scope = components.reduce(
     (scope, { tagname, component }) => ({
@@ -121,13 +122,27 @@ export default function MdxLiveEditor({
         <CodeMirror
           value={value}
           options={config.codemirror}
+          onScroll={editor => {
+            // Rudimentary scroll sync
+            // Might be improved via injection of scroll anchors into MDX output
+            const { scrollTop, height, size } = editor.getDoc()
+            const scrollPercent = scrollTop / height
+            const topLine = Math.floor(size * scrollPercent)
+            const linePercent = topLine / size
+            const top = Math.floor(
+              previewRef.current.scrollHeight * linePercent
+            )
+            previewRef.current.scrollTo({
+              top,
+              behavior: 'smooth'
+            })
+          }}
           onBeforeChange={(editor, data, value) => {
             setValue(value)
           }}
-          onChange={(editor, data, value) => {}}
         />
       </Editor>
-      <Preview>
+      <Preview ref={previewRef}>
         <ErrorBoundary value={value}>
           <MDX components={replacements} scope={scope}>
             {value}
