@@ -2,9 +2,12 @@
   "name": "@mdx-live/editor",
   "version": "0.0.1",
   "description": "Extensible mdx editor with live preview",
-  "main": "src/index.js",
+  "source": "src/index.js",
+  "main": "dist/index.js",
+  "unpkg": "dist/index.umd.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "microbundle --jsx React.createElement",
+    "dev": "microbundle watch --jsx React.createElement"
   },
   "repository": {
     "type": "git",
@@ -20,9 +23,12 @@
   },
   "homepage": "https://github.com/axe312ger/mdx-live-editor#readme",
   "dependencies": {
-    "@axe312/easymde": "^2.7.0",
-    "@mdx-js/runtime": "^1.0.10",
+    "@axe312/easymde": "^2.7.1",
+    "@mdx-js/runtime": "^0.20.3",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
+  },
+  "devDependencies": {
+    "microbundle": "^0.11.0"
   }
 }
