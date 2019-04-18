@@ -2,7 +2,8 @@
   "name": "mdx-live",
   "private": true,
   "scripts": {
-    "build": "lerna run build"
+    "build": "lerna run build",
+    "publish": "lerna publish"
   },
   "devDependencies": {
     "lerna": "^3.13.3"
