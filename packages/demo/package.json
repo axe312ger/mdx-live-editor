@@ -21,7 +21,7 @@
   },
   "scripts": {
     "analyze": "source-map-explorer 'dist/*.js'",
-    "start": "parcel src/index.html",
+    "dev": "parcel src/index.html",
     "build": "parcel build src/index.html",
     "deploy": "npm run build && gh-pages -d build"
   },
