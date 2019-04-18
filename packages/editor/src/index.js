@@ -107,8 +107,8 @@ export default function MdxLiveEditor({
     codemirror: {
       ...{
         mode: { name: 'gfm' },
-        lineNumbers: false,
-        lineWrapping: false,
+        lineNumbers: true,
+        lineWrapping: true,
         allowDropFileTypes: ['text/plain'],
         theme: 'mdx-live'
       },
