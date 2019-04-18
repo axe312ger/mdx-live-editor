@@ -1,12 +1,12 @@
 {
   "name": "@mdx-live/demo",
   "description": "See here https://axe312ger.github.io/mdx-live-editor/",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "private": true,
   "homepage": "https://axe312ger.github.io/mdx-live-editor/",
   "dependencies": {
     "@axe312/easymde": "^2.7.1",
-    "@mdx-live/editor": "^0.0.4",
+    "@mdx-live/editor": "^0.0.5",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",

@@ -1,6 +1,6 @@
 {
   "name": "@mdx-live/editor",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Extensible mdx editor with live preview",
   "source": "src/index.js",
   "main": "dist/index.js",
