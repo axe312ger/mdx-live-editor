@@ -6,7 +6,7 @@ import MDX from '@mdx-js/runtime'
 
 import Toolbar from './Toolbar'
 
-export default function editor({ components = [], replacements = {}, toolbar = null }) {
+export default function editor({ components = [], replacements = {}, toolbar = null, easymde: easymdeConfig = {} }) {
   const scope = components.reduce(
     (scope, { tagname, component }) => ({
       ...scope,
@@ -14,12 +14,20 @@ export default function editor({ components = [], replacements = {}, toolbar = n
     }),
     {}
   )
-  const easymde = new EasyMDE({
-    autoDownloadFontAwesome: true,
+
+  const config = {
+    ...{
+      autoDownloadFontAwesome: true,
     forceSync: true,
     autofocus: true,
     indentWithTabs: false,
     spellChecker: false,
+    },
+    ...easymdeConfig
+  }
+
+  const easymde = new EasyMDE({
+    ...config,
     previewRender: plainText => {
       try {
         return renderToStaticMarkup(
