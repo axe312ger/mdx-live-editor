@@ -6,26 +6,22 @@
     "@axe312/easymde": "^2.7.1",
     "@mdx-live/editor": "^0.0.1",
     "prop-types": "^15.7.2",
-    "raw.macro": "^0.3.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "styled-components": "^4.2.0"
   },
   "devDependencies": {
+    "@axe312/babel-plugin-inline-import": "^4.0.0",
+    "@babel/core": "^7.4.3",
+    "@babel/plugin-proposal-class-properties": "^7.4.0",
     "gh-pages": "^2.0.1",
-    "react-scripts": "2.1.8",
     "source-map-explorer": "^1.8.0"
   },
   "scripts": {
-    "analyze": "source-map-explorer 'build/static/js/*.js'",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
+    "analyze": "source-map-explorer 'dist/*.js'",
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html",
     "deploy": "npm run build && gh-pages -d build"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
   },
   "browserslist": [
     ">0.2%",

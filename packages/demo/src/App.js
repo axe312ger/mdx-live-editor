@@ -1,12 +1,10 @@
 import React, { useEffect } from 'react'
 
-import '@axe312/easymde/dist/easymde.min.css'
-import raw from 'raw.macro'
-
 import editor from '@mdx-live/editor'
-import './App.css'
+import '@axe312/easymde/dist/easymde.min.css'
 
 import Grid from './mdx/Grid'
+import defaultMarkdownValue from './default.md'
 
 const components = [
   {
@@ -33,8 +31,6 @@ const replacements = {
 
 export default function App() {
   let easymde
-
-  const defaultMarkdownValue = raw('./default.md')
 
   useEffect(() => {
     easymde = editor({ components, replacements })
