@@ -27,7 +27,7 @@
     "analyze": "source-map-explorer 'dist/*.js'",
     "dev": "parcel src/index.html",
     "build": "parcel build src/index.html",
-    "deploy": "npm run build && gh-pages -d build"
+    "deploy": "npm run build -- --public-url '/mdx-live-editor/custom-editor/' && gh-pages -d dist -e custom-editor"
   },
   "browserslist": [
     ">0.2%",
