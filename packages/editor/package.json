@@ -29,7 +29,8 @@
     "react-codemirror2": "^5.1.0",
     "react-dom": "^16.8.6",
     "styled-components": "^4.2.0",
-    "typeface-fira-mono": "^0.0.72"
+    "typeface-fira-mono": "^0.0.72",
+    "typeface-inter": "^3.5.0"
   },
   "devDependencies": {
     "microbundle": "^0.11.0"

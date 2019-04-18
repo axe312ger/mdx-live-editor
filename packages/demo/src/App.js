@@ -4,6 +4,7 @@ import MdxLiveEditor from '@mdx-live/editor'
 import styled from 'styled-components'
 
 import Grid from './mdx/Grid'
+import Diagram from './mdx/Diagram'
 import defaultMarkdownValue from './default.md'
 
 const Textarea = styled.textarea`
@@ -17,12 +18,19 @@ const components = [
     component: Grid,
     title: 'Grid',
     description: 'Display content next to each other',
-    icon: 'grip-horizontal',
+    icon: 'th',
     demo: `<Grid>
   <img src="https://source.unsplash.com/weekly?water" alt="" />
   <img src="https://source.unsplash.com/weekly?nature" alt="" />
   <img src="https://source.unsplash.com/weekly?air" alt="" />
 </Grid>`
+  },
+  {
+    tagname: 'Diagram',
+    component: Diagram,
+    title: 'Diagram via mermaidjs',
+    description: 'https://mermaidjs.github.io/',
+    icon: 'bar-chart'
   }
 ]
 
