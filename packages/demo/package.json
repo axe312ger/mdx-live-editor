@@ -16,6 +16,8 @@
     "@axe312/babel-plugin-inline-import": "^4.0.0",
     "@babel/core": "^7.4.3",
     "@babel/plugin-proposal-class-properties": "^7.4.0",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.16.0",
     "gh-pages": "^2.0.1",
     "source-map-explorer": "^1.8.0"
   },

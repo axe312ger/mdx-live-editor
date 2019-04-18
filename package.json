@@ -3,9 +3,18 @@
   "private": true,
   "scripts": {
     "build": "lerna run build",
-    "publish": "lerna version --no-push --conventional-commits && lerna publish from-git"
+    "publish": "lerna version --no-push --conventional-commits && lerna publish from-git",
+    "lint": "eslint --fix 'packages/*/src/**/*.js'"
   },
   "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-config-standard-react": "^7.0.2",
+    "eslint-plugin-import": "^2.17.2",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-promise": "^4.1.1",
+    "eslint-plugin-react": "^7.12.4",
+    "eslint-plugin-standard": "^4.0.0",
     "lerna": "^3.13.3"
   },
   "workspaces": [
