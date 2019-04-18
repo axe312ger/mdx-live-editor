@@ -1,0 +1,22 @@
+{
+  "name": "@mdx-live/editor",
+  "version": "0.0.1",
+  "description": "Extensible mdx editor with live preview",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/axe312ger/mdx-live-editor.git"
+  },
+  "keywords": [
+    "mdx"
+  ],
+  "author": "Benedikt Rötsch <info@benedikt-roetsch.de>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/axe312ger/mdx-live-editor/issues"
+  },
+  "homepage": "https://github.com/axe312ger/mdx-live-editor#readme"
+}
