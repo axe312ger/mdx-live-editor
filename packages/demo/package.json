@@ -1,7 +1,7 @@
 {
   "name": "@mdx-live/demo",
   "description": "See here https://axe312ger.github.io/mdx-live-editor/",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "homepage": "https://axe312ger.github.io/mdx-live-editor/",
   "dependencies": {
     "@axe312/easymde": "^2.7.1",
