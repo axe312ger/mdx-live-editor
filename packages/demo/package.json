@@ -5,7 +5,7 @@
   "private": true,
   "homepage": "https://axe312ger.github.io/mdx-live-editor/",
   "dependencies": {
-    "@axe312/easymde": "https://github.com/axe312ger/easy-markdown-editor",
+    "@axe312/easymde@npm:easymde": "^2.6.1-157.0",
     "@mdx-live/editor": "^0.0.5",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
@@ -13,7 +13,7 @@
     "styled-components": "^4.2.0"
   },
   "devDependencies": {
-    "@axe312/babel-plugin-inline-import": "https://github.com/axe312ger/babel-plugin-inline-import",
+    "@axe312/babel-plugin-inline-import@npm:babel-plugin-inline-import": "^3.0.0",
     "@babel/core": "^7.4.3",
     "@babel/plugin-proposal-class-properties": "^7.4.0",
     "gh-pages": "^2.0.1",
