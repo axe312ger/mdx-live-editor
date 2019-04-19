@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/axe312ger/mdx-live-editor#readme",
   "dependencies": {
-    "@axe312/easymde": "^2.7.1",
+    "@axe312/easymde": "https://github.com/axe312ger/easy-markdown-editor",
     "@mdx-js/runtime": "^0.20.3",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
