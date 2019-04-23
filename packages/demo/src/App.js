@@ -18,7 +18,7 @@ const components = [
     component: Grid,
     title: 'Grid',
     description: 'Display content next to each other',
-    icon: 'grip-horizontal',
+    icon: 'th-large',
     demo: `<Grid>
   <img src="https://source.unsplash.com/weekly?water" alt="" />
   <img src="https://source.unsplash.com/weekly?nature" alt="" />
